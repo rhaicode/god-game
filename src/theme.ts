@@ -25,7 +25,11 @@ const theme = extendTheme({
     '6xl': '3.75rem', // 60px
   },
   styles: {
-    global: {},
+    global: {
+      '.plex': {
+        fontFamily: "'IBM Plex Mono'",
+      },
+    },
   },
 })
 
