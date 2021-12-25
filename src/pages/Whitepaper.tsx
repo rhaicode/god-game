@@ -1,3 +1,3 @@
-const Whitepaper: React.FC = () => <div></div>;
+const Whitepaper: React.FC = () => <div />;
 
 export default Whitepaper;

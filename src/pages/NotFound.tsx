@@ -1,3 +1,3 @@
-const NotFound: React.FC = () => <div></div>;
+const NotFound: React.FC = () => <div />;
 
 export default NotFound;
