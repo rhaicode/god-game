@@ -1,8 +1,16 @@
 import { extendTheme } from '@chakra-ui/react';
 
 const theme = extendTheme({
-  colors: {},
-  fonts: {},
+  colors: {
+    blue: '#0D7EB7',
+    lightBlue: '#00A4F6',
+    yellow: '#EDC433',
+    gold: '#DDAC00',
+    charcoal: '#21262C',
+  },
+  fonts: {
+    body: "'VT323', sans-serif",
+  },
   fontSizes: {
     'xs-11': '0.6875rem', // 11px
     xs: '0.75rem', // 12px
