@@ -1,0 +1,96 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:jsx-a11y/recommended",
+    "airbnb"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
+  },
+  "plugins": ["react", "@typescript-eslint"],
+  "rules": {
+    // React
+    "react/jsx-props-no-spreading": "off",
+    "react/display-name": "off",
+    "react/prop-types": "off",
+    "react/jsx-filename-extension": [
+      1,
+      { "extensions": [".js", ".jsx", ".ts", ".tsx"] }
+    ],
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off",
+
+    // Accessibility
+    "jsx-a11y/label-has-associated-control": 0,
+
+    // Import
+    "import/prefer-default-export": "off",
+    "import/extensions": "off",
+
+    // Prettier
+    // "prettier/prettier": ["error", { "endOfLine": "auto" }],
+
+    // TypeScript
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/explicit-member-accessibility": 0,
+    "@typescript-eslint/indent": 0,
+    "@typescript-eslint/member-delimiter-style": 0,
+    "@typescript-eslint/no-explicit-any": 0,
+    "@typescript-eslint/no-var-requires": 0,
+    "@typescript-eslint/no-use-before-define": "off",
+    "no-use-before-define": "off",
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": [
+      2,
+      {
+        "argsIgnorePattern": "^_"
+      }
+    ],
+    "no-console": [
+      1,
+      {
+        "allow": ["warn", "error"]
+      }
+    ],
+
+    // Other
+    "jsx-a11y/anchor-is-valid": "off",
+    "comma-dangle": "off",
+    "quotes": "off",
+    "no-undef": "off",
+    "semi": "off",
+    "linebreak-style": "off",
+    "arrow-parens": "off",
+    "object-curly-newline": "off",
+    "no-shadow": "off",
+    "indent": "off",
+    "operator-linebreak": "off",
+    "no-confusing-arrow": "off",
+    "implicit-arrow-linebreak": "off",
+    "function-paren-newline": "off",
+    "react/jsx-closing-tag-location": "off",
+    "react/jsx-one-expression-per-line": "off",
+    "prefer-object-spread": "off",
+    "no-useless-escape": "off",
+    "func-call-spacing": "off",
+    "no-spaced-func": "off",
+    "react/function-component-definition": "off"
+  }
+}
