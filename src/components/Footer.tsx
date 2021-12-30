@@ -7,8 +7,8 @@ const Footer: React.FC = () => (
       alignItems="center"
       my="auto"
       w="100%"
-      borderTop="1px solid rgba(255,255,255,0.3)"
-      borderBottom="1px solid rgba(255,255,255,0.3)"
+      borderTop="1px solid rgba(255,255,255,0.2)"
+      borderBottom="1px solid rgba(255,255,255,0.2)"
       py="40px"
     >
       <Text as="span" textTransform="uppercase" fontSize="30px" ml="48px">

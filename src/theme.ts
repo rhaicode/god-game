@@ -6,6 +6,7 @@ const theme = extendTheme({
     lightBlue: '#00A4F6',
     yellow: '#EDC433',
     gold: '#DDAC00',
+    gold2: '#EBBA3E',
     charcoal: '#081C26',
   },
   fonts: {
