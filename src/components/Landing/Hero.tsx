@@ -4,6 +4,8 @@ import { useHistory } from 'react-router-dom'
 import ThemedButton from '../../themed/Button'
 import { useWallet } from '../../hooks'
 
+// const TEMPLE_CONTRACT_ADDRESS = '0x85Fe671A158bf98f1C79b56A100171b99231E6aE'
+
 const Hero: React.FC = () => {
   const { currentAccount, connectWallet } = useWallet()
   const history = useHistory()
