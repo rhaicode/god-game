@@ -30,36 +30,23 @@ const Minting: React.FC = () => {
   const [mintAmount, setMintAmount] = useState(1)
 
   const askContractToMintNFT = async (amount: number) => {
-    try {
-      const { ethereum } = window as any
+    const { ethereum } = window as any
 
-      if (ethereum) {
-        const provider = new ethers.providers.Web3Provider(ethereum)
-        const signer = provider.getSigner()
-        const connectedContract = new ethers.Contract(
-          GOD_CONTRACT_ADDRESS,
-          GodContract.abi,
-          signer
-        )
+    if (ethereum) {
+      const provider = new ethers.providers.Web3Provider(ethereum)
+      const signer = provider.getSigner()
+      const connectedContract = new ethers.Contract(
+        GOD_CONTRACT_ADDRESS,
+        GodContract.abi,
+        signer
+      )
 
-        const totalPrice = String(MINT_PRICE * amount)
-        const ethersValue = { value: ethers.utils.parseEther(totalPrice) }
+      const totalPrice = String(MINT_PRICE * amount)
+      const ethersValue = { value: ethers.utils.parseEther(totalPrice) }
 
-        console.log('Going to pop wallet now to pay mint fee and gas...')
+      const nftTxn = await connectedContract.mint(amount, false, ethersValue)
 
-        const nftTxn = await connectedContract.mint(amount, false, ethersValue)
-
-        console.log('Mining...please wait.')
-        await nftTxn.wait()
-
-        console.log(
-          `Mined, see transaction: https://rinkeby.etherscan.io/tx/${nftTxn.hash}`
-        )
-      } else {
-        console.log("Ethereum object doesn't exist!")
-      }
-    } catch (error) {
-      console.log(error)
+      await nftTxn.wait()
     }
   }
 
