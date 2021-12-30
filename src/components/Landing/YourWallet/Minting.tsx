@@ -45,21 +45,13 @@ const Minting: React.FC = () => {
         const totalPrice = String(MINT_PRICE * amount)
         const ethersValue = { value: ethers.utils.parseEther(totalPrice) }
 
-        console.log('Going to pop wallet now to pay mint fee and gas...')
-
         const nftTxn = await connectedContract.mint(amount, false, ethersValue)
 
-        console.log('Mining...please wait.')
         await nftTxn.wait()
-
-        console.log(
-          `Mined, see transaction: https://rinkeby.etherscan.io/tx/${nftTxn.hash}`
-        )
       } else {
-        console.log("Ethereum object doesn't exist!")
       }
     } catch (error) {
-      console.log(error)
+      alert(error)
     }
   }
 
