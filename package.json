@@ -12,6 +12,7 @@
     "@types/jest": "^27.0.3",
     "@types/node": "^16.11.17",
     "@types/react-router-dom": "^5.1.8",
+    "ethers": "^5.5.2",
     "framer-motion": "^4.1.17",
     "jotai": "^1.4.9",
     "react": "^17.0.2",
