@@ -16,9 +16,9 @@ import ThemedButton from '../../../themed/Button'
 
 import GodContract from '../../../utils/God.json'
 
-const GOD_CONTRACT_ADDRESS = '0x57b31bE47b60a98F2adFeA04441DAD71613326aB'
+const GOD_CONTRACT_ADDRESS = '0xB0069D11377dcC862E28a8061504Ee1Cbc9Bd76E'
 
-const MINT_PRICE = 0.000001
+const MINT_PRICE = 0.2
 
 const StyledBox = styled(Box)`
   background: linear-gradient(105.6deg, #183544 16.92%, #0c2c3c 76.13%);
