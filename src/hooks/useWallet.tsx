@@ -81,9 +81,9 @@ const useWallet = () => {
         return
       }
 
-      const isValidNetwork = await validateNetwork()
+      // const isValidNetwork = await validateNetwork()
 
-      if (!isValidNetwork) return
+      // if (!isValidNetwork) return
 
       const accounts = await ethereum.request({
         method: 'eth_requestAccounts',
