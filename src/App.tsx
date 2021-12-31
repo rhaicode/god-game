@@ -1,13 +1,15 @@
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom'
 
-import Landing from './pages/Landing';
-import Whitepaper from './pages/Whitepaper';
-import NotFound from './pages/NotFound';
+import Landing from './pages/Landing'
+import Whitepaper from './pages/Whitepaper'
+import NotFound from './pages/NotFound'
 
-import ErrorHandler from './components/ErrorHandler';
+import ErrorHandler from './components/ErrorHandler'
+import ScrollToTop from './components/ScrollToTop'
 
 const App: React.FC = () => (
   <ErrorHandler>
+    <ScrollToTop />
     <Switch>
       <Route exact path="/">
         <Landing />
@@ -20,6 +22,6 @@ const App: React.FC = () => (
       </Route>
     </Switch>
   </ErrorHandler>
-);
+)
 
-export default App;
+export default App

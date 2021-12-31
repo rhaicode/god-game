@@ -11,11 +11,12 @@ import {
   Thead,
   Tr,
 } from '@chakra-ui/react'
-import { useHistory } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
 import styled from '@emotion/styled'
 
 import Footer from '../components/Footer'
 import { useWallet } from '../hooks'
+import SVGWall from '../components/SVGWall'
 
 const StyledTable = styled(Table)`
   td {
@@ -32,7 +33,7 @@ const Whitepaper: React.FC = () => {
   }
 
   return (
-    <>
+    <Box overflowX="hidden">
       <Box w="100%" backgroundColor="charcoal" color="white" pb="200px">
         <Flex
           w="100%"
@@ -43,9 +44,11 @@ const Whitepaper: React.FC = () => {
           borderBottom="1px solid rgba(255,255,255,0.2)"
           mb="70px"
         >
-          <Text as="span" fontSize="3xl">
-            GOD GAME
-          </Text>
+          <Link to="/">
+            <Text as="span" fontSize="3xl">
+              GOD GAME
+            </Text>
+          </Link>
           {currentAccount && (
             <Flex justifyContent="space-between" alignItems="center">
               <Image
@@ -447,8 +450,9 @@ const Whitepaper: React.FC = () => {
           </Text>
         </Box>
       </Box>
+      <SVGWall />
       <Footer />
-    </>
+    </Box>
   )
 }
 
