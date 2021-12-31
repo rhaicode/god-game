@@ -19,7 +19,14 @@ const WhoWillYouBe: React.FC = () => (
       </Flex>
       <Grid templateColumns="repeat(2, 1fr)" columnGap="60px">
         <Box>
-          <StyledBox height="450px" mb="40px" />
+          <StyledBox
+            display="flex"
+            height="450px"
+            mb="40px"
+            borderRadius="10px"
+          >
+            <Image src="assets/png/armour_1.png" alt="god game" m="auto" />
+          </StyledBox>
           <Text as="span" fontSize="3xl">
             Greek God
           </Text>
@@ -28,7 +35,14 @@ const WhoWillYouBe: React.FC = () => (
           </Text>
         </Box>
         <Box>
-          <StyledBox height="450px" mb="40px" />
+          <StyledBox
+            display="flex"
+            height="450px"
+            mb="40px"
+            borderRadius="10px"
+          >
+            <Image src="assets/png/human_1.png" alt="god game" m="auto" />
+          </StyledBox>
           <Text as="span" fontSize="3xl">
             Human
           </Text>

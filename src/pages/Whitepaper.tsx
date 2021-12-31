@@ -12,9 +12,16 @@ import {
   Tr,
 } from '@chakra-ui/react'
 import { useHistory } from 'react-router-dom'
-import Footer from '../components/Footer'
+import styled from '@emotion/styled'
 
+import Footer from '../components/Footer'
 import { useWallet } from '../hooks'
+
+const StyledTable = styled(Table)`
+  td {
+    border-bottom: 0px;
+  }
+`
 
 const Whitepaper: React.FC = () => {
   const { currentAccount } = useWallet()
@@ -195,7 +202,7 @@ const Whitepaper: React.FC = () => {
           <Text as="h2" fontSize="3xl" color="gold2" mt="60px">
             Minting
           </Text>
-          <Table size="lg" maxW="700px" className="plex" mt="30px">
+          <StyledTable size="lg" maxW="700px" className="plex" mt="30px">
             <Thead>
               <Tr>
                 <Th color="white" fontFamily="'IBM Plex Mono' !important">
@@ -231,8 +238,8 @@ const Whitepaper: React.FC = () => {
                 <Td>80,000 $FAITH</Td>
               </Tr>
             </Tbody>
-          </Table>
-          <Text as="p" className="plex" mt="20px">
+          </StyledTable>
+          <Text as="p" className="plex" mt="40px">
             The total cost to mint all of the Worshippers and Gods in existence
             will be 1,800,000{' '}
             <Text as="span" color="gold2">
