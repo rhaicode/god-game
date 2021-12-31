@@ -3,7 +3,6 @@ import {
   Box,
   Flex,
   Text,
-  Image,
   NumberInput,
   NumberInputField,
   NumberDecrementStepper,
@@ -51,12 +50,11 @@ const Minting: React.FC = () => {
   }
 
   return (
-    <StyledBox position="relative">
+    <StyledBox position="relative" borderRadius="10px">
       <Flex alignItems="center">
         <Text as="span" fontSize="4xl" mr="16px">
           Minting
         </Text>
-        <Image src="/assets/png/kind.png" alt="sword" ml="8px" height="40px" />
       </Flex>
       <Box>
         <Flex className="plex">

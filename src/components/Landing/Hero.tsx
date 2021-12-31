@@ -4,8 +4,6 @@ import { useHistory } from 'react-router-dom'
 import ThemedButton from '../../themed/Button'
 import { useWallet } from '../../hooks'
 
-// const TEMPLE_CONTRACT_ADDRESS = '0x85Fe671A158bf98f1C79b56A100171b99231E6aE'
-
 const Hero: React.FC = () => {
   const { currentAccount, connectWallet } = useWallet()
   const history = useHistory()
@@ -87,7 +85,15 @@ const Hero: React.FC = () => {
               </Button>
             </Flex>
           </Box>
-          <Box backgroundColor="lightBlue" w="500px" h="440px" />
+          <Flex
+            backgroundColor="#75b4d4"
+            w="500px"
+            h="440px"
+            borderRadius="10px"
+            border="1px solid white"
+          >
+            <Image src="assets/png/armour_1.png" alt="god game" m="auto" />
+          </Flex>
         </Flex>
       </Box>
     </Box>

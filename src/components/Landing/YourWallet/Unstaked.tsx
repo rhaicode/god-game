@@ -1,4 +1,13 @@
-import { Box, Flex, Text, Image } from '@chakra-ui/react'
+import {
+  Box,
+  Flex,
+  NumberDecrementStepper,
+  NumberIncrementStepper,
+  NumberInput,
+  NumberInputField,
+  NumberInputStepper,
+  Text,
+} from '@chakra-ui/react'
 import styled from '@emotion/styled'
 
 import ThemedButton from '../../../themed/Button'
@@ -10,15 +19,26 @@ const StyledBox = styled(Box)`
 `
 
 const Unstaked: React.FC = () => (
-  <StyledBox>
+  <StyledBox position="relative" borderRadius="10px">
     <Flex alignItems="center">
       <Text as="span" fontSize="4xl" mr="16px">
         Unstaked
       </Text>
-      <Image src="/assets/png/kind.png" alt="sword" ml="8px" height="40px" />
     </Flex>
-    <Flex mt="24px">
-      <ThemedButton size="lg" minW="160px" mx="auto">
+    <Flex
+      position="absolute"
+      w="calc(100% - 64px)"
+      direction="column"
+      mt="32px"
+    >
+      <NumberInput size="lg" min={1} step={1}>
+        <NumberInputField fontSize="22px" />
+        <NumberInputStepper>
+          <NumberIncrementStepper />
+          <NumberDecrementStepper />
+        </NumberInputStepper>
+      </NumberInput>
+      <ThemedButton size="lg" minW="160px" mt="24px" mx="auto">
         UNSTAKE
       </ThemedButton>
     </Flex>
