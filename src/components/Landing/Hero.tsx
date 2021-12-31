@@ -90,7 +90,7 @@ const Hero: React.FC = () => {
             w="500px"
             h="440px"
             borderRadius="10px"
-            border="1px solid white"
+            border="1px solid rgba(255, 255, 255, 0.26)"
           >
             <Image src="assets/png/armour_1.png" alt="god game" m="auto" />
           </Flex>
