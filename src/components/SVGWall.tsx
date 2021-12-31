@@ -31,7 +31,7 @@ const SVGBox: React.FC = () => (
     }}
     transition={{
       ease: 'linear',
-      duration: 3,
+      duration: 2,
       delay: 2,
       repeatDelay: 2,
       repeat: Infinity,

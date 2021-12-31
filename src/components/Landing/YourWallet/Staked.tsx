@@ -1,13 +1,4 @@
-import {
-  Box,
-  Flex,
-  NumberDecrementStepper,
-  NumberIncrementStepper,
-  NumberInput,
-  NumberInputField,
-  NumberInputStepper,
-  Text,
-} from '@chakra-ui/react'
+import { Box, Flex, Input, Text } from '@chakra-ui/react'
 import styled from '@emotion/styled'
 
 import ThemedButton from '../../../themed/Button'
@@ -30,13 +21,7 @@ const Staked: React.FC = () => (
       direction="column"
       mt="32px"
     >
-      <NumberInput size="lg" min={1} step={1}>
-        <NumberInputField fontSize="22px" />
-        <NumberInputStepper>
-          <NumberIncrementStepper />
-          <NumberDecrementStepper />
-        </NumberInputStepper>
-      </NumberInput>
+      <Input type="text" size="lg" fontSize="22px" />
       <ThemedButton size="lg" minW="160px" mt="24px" mx="auto">
         STAKE
       </ThemedButton>
