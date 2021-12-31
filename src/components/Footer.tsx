@@ -12,7 +12,7 @@ const Footer: React.FC = () => (
       py="40px"
     >
       <Text as="span" textTransform="uppercase" fontSize="30px" ml="48px">
-        Greek Gods &amp; Mortals
+        GOD GAME
       </Text>
       <Text
         as="span"
