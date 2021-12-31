@@ -1,9 +1,11 @@
 import { useToast, Text } from '@chakra-ui/react'
 import { useAtom } from 'jotai'
+import { useState } from 'react'
 import { accountAtom } from '../atoms'
 
 const useWallet = () => {
   const [currentAccount, setCurrentAccount] = useAtom(accountAtom)
+  const [isLoading, setLoading] = useState(false)
   const toast = useToast()
 
   const validateNetwork = async (): Promise<boolean> => {
@@ -60,6 +62,7 @@ const useWallet = () => {
 
   const connectWallet = async () => {
     try {
+      setLoading(true)
       const { ethereum } = window as any
 
       if (!ethereum) {
@@ -115,10 +118,12 @@ const useWallet = () => {
         isClosable: true,
       })
       console.error(error)
+    } finally {
+      setLoading(false)
     }
   }
 
-  return { currentAccount, connectWallet, validateNetwork }
+  return { currentAccount, connectWallet, validateNetwork, loading: isLoading }
 }
 
 export default useWallet

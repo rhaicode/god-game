@@ -1,4 +1,5 @@
 import { Flex, Text } from '@chakra-ui/react'
+import { Link } from 'react-router-dom'
 
 const Footer: React.FC = () => (
   <Flex backgroundColor="targetBlue" color="white" height="250px">
@@ -11,9 +12,11 @@ const Footer: React.FC = () => (
       borderBottom="1px solid rgba(255,255,255,0.2)"
       py="40px"
     >
-      <Text as="span" textTransform="uppercase" fontSize="30px" ml="48px">
-        GOD GAME
-      </Text>
+      <Link to="/">
+        <Text as="span" textTransform="uppercase" fontSize="30px" ml="48px">
+          GOD GAME
+        </Text>
+      </Link>
       <Text
         as="span"
         textTransform="uppercase"

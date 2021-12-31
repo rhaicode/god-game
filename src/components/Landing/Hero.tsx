@@ -5,7 +5,7 @@ import ThemedButton from '../../themed/Button'
 import { useWallet } from '../../hooks'
 
 const Hero: React.FC = () => {
-  const { currentAccount, connectWallet } = useWallet()
+  const { currentAccount, connectWallet, loading } = useWallet()
   const history = useHistory()
 
   const goToWhitepaper = () => {
@@ -61,7 +61,13 @@ const Hero: React.FC = () => {
             </Text>
             <Flex>
               {!currentAccount && (
-                <ThemedButton size="lg" mr="8px" onClick={connectWallet}>
+                <ThemedButton
+                  size="lg"
+                  mr="8px"
+                  onClick={connectWallet}
+                  isLoading={loading}
+                  isDisabled={loading}
+                >
                   Connect Metamask
                 </ThemedButton>
               )}
@@ -85,15 +91,15 @@ const Hero: React.FC = () => {
               </Button>
             </Flex>
           </Box>
-          <Flex
-            backgroundColor="#75b4d4"
+
+          <Image
+            src="assets/gif/GodGameGif.gif"
             w="500px"
             h="440px"
+            alt="god game"
+            m="auto"
             borderRadius="10px"
-            border="1px solid rgba(255, 255, 255, 0.26)"
-          >
-            <Image src="assets/gif/GodGameGif.gif" alt="god game" m="auto" />
-          </Flex>
+          />
         </Flex>
       </Box>
     </Box>
