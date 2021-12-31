@@ -44,7 +44,7 @@ const Whitepaper: React.FC = () => {
           mb="70px"
         >
           <Text as="span" fontSize="3xl">
-            GREEK GODS &amp; MORTALS
+            GOD GAME
           </Text>
           {currentAccount && (
             <Flex justifyContent="space-between" alignItems="center">
@@ -77,7 +77,7 @@ const Whitepaper: React.FC = () => {
             {'< Back'}
           </Button>
           <Text as="span" fontSize="5xl">
-            GREEK GODS &amp; MORTALS
+            GOD GAME
           </Text>
         </Flex>
         <Box ml="260px">
@@ -186,17 +186,17 @@ const Whitepaper: React.FC = () => {
           </Text>
           <Text as="p" className="plex" maxW="90ch" mt="20px">
             <Text as="span" color="gold2" fontWeight={500}>
-              Worshipper / God NFT
+              Worshipper / God NFT : 0xB0069D11377dcC862E28a8061504Ee1Cbc9Bd76E
             </Text>
           </Text>
           <Text as="p" className="plex" maxW="90ch" mt="20px">
             <Text as="span" color="gold2" fontWeight={500}>
-              Temple Staking
+              Temple Staking : 0xAdD0284fb369EddFec66f8fF7F3f4e10E082100b
             </Text>
           </Text>
           <Text as="p" className="plex" maxW="90ch" mt="20px">
             <Text as="span" color="gold2" fontWeight={500}>
-              $FAITH Token
+              $FAITH Token : 0xc7c52B9085441f38Fb0D7C196F77CE53033e87ef
             </Text>
           </Text>
           <Text as="h2" fontSize="3xl" color="gold2" mt="60px">

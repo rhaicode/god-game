@@ -31,7 +31,7 @@ const WhoWillYouBe: React.FC = () => (
             Greek God
           </Text>
           <Text as="p" className="plex">
-            A further description of the game can go here.
+            Be worshipped and collect $FAITH from followers
           </Text>
         </Box>
         <Box>
@@ -47,7 +47,7 @@ const WhoWillYouBe: React.FC = () => (
             Human
           </Text>
           <Text as="p" className="plex">
-            A further description of the game can go here.
+            Worship in the Temple and generate $FAITH
           </Text>
         </Box>
       </Grid>

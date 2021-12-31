@@ -22,7 +22,7 @@ const Hero: React.FC = () => {
           py="20px"
         >
           <Text as="span" fontSize="3xl">
-            GREEK GODS &amp; MORTALS
+            GOD GAME
           </Text>
           {currentAccount ? (
             <Flex justifyContent="space-between" alignItems="center">
@@ -92,7 +92,7 @@ const Hero: React.FC = () => {
             borderRadius="10px"
             border="1px solid rgba(255, 255, 255, 0.26)"
           >
-            <Image src="assets/png/armour_1.png" alt="god game" m="auto" />
+            <Image src="assets/gif/GodGameGif.gif" alt="god game" m="auto" />
           </Flex>
         </Flex>
       </Box>
