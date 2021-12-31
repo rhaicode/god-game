@@ -27,9 +27,11 @@ const StyledBox = styled(Box)`
 `
 const Minting: React.FC = () => {
   const [mintAmount, setMintAmount] = useState(1)
+  const [loading, setLoading] = useState(false)
 
   const askContractToMintNFT = async (amount: number) => {
     const { ethereum } = window as any
+    setLoading(true)
 
     if (ethereum) {
       const provider = new ethers.providers.Web3Provider(ethereum)
@@ -47,6 +49,8 @@ const Minting: React.FC = () => {
 
       await nftTxn.wait()
     }
+
+    setLoading(false)
   }
 
   return (
@@ -95,6 +99,8 @@ const Minting: React.FC = () => {
           onClick={async () => {
             await askContractToMintNFT(mintAmount)
           }}
+          isLoading={loading}
+          isDisabled={loading}
         >
           MINT
         </ThemedButton>

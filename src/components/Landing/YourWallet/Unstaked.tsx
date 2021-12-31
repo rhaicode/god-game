@@ -13,7 +13,7 @@ const Unstaked: React.FC = () => (
   <StyledBox position="relative" borderRadius="10px">
     <Flex alignItems="center">
       <Text as="span" fontSize="4xl" mr="16px">
-        Unstaked
+        Unstake
       </Text>
     </Flex>
     <Flex

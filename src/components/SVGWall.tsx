@@ -48,7 +48,7 @@ const SVGWall: React.FC = () => (
     templateColumns="repeat(auto-fill, 30px)"
   >
     {Array.from({ length: 4 }).map((_, __) =>
-      Array.from({ length: 50 }).map((_, __) => <SVGBox key={uniqueId()} />)
+      Array.from({ length: 100 }).map((_, __) => <SVGBox key={uniqueId()} />)
     )}
   </Grid>
 )
