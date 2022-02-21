@@ -1,7 +1,7 @@
 import { Flex, Text } from '@chakra-ui/react'
 
 const Footer: React.FC = () => (
-  <Flex backgroundColor="targetBlue" color="white" height="250px">
+  <Flex backgroundColor="#803103" color="white" height="250px">
     <Flex
       justifyContent="space-between"
       alignItems="center"
@@ -12,7 +12,7 @@ const Footer: React.FC = () => (
       py="40px"
     >
       <Text as="span" textTransform="uppercase" fontSize="30px" ml="48px">
-        Greek Gods &amp; Mortals
+        GOD GAME SOCIALS:
       </Text>
       <Text
         as="span"
@@ -21,7 +21,16 @@ const Footer: React.FC = () => (
         className="plex"
         mr="48px"
       >
-        CONTACT
+        Discord
+      </Text>
+      <Text
+        as="span"
+        textTransform="uppercase"
+        fontSize="18px"
+        className="plex"
+        mr="48px"
+      >
+        Twitter
       </Text>
     </Flex>
   </Flex>

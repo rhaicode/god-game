@@ -5,7 +5,7 @@ import Staked from './Staked'
 import Unstaked from './Unstaked'
 
 const YourWallet: React.FC = () => (
-  <Box backgroundColor="charcoal" color="white" pb="40px">
+  <Box backgroundColor="black" color="white" pb="40px">
     <Box maxW="1200px" mx="auto">
       <Flex pt="100px" textTransform="uppercase" fontSize="4xl">
         <Text as="span">YOUR WALLET</Text>

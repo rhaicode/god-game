@@ -4,21 +4,21 @@ import { sample, uniqueId } from 'lodash'
 
 const getBackgroundColor = () =>
   sample([
-    '#081C26',
-    '#1990CC',
-    '#0E4967',
-    '#156F9C',
-    '#005078',
-    '#0D7EB7',
-    '#0D7EB7',
-    '#0D7EB7',
-    '#0D7EB7',
-    '#0D7EB7',
-    '#0D7EB7',
-    '#0D7EB7',
-    '#081C26',
-    '#081C26',
-    '#081C26',
+    '#20150E',
+    '#803103',
+    '#000000',
+    '#914111',
+    '#803103',
+    '#803103',
+    '#000000',
+    '#803103',
+    '#20150E',
+    '#803103',
+    '#803103',
+    '#803103',
+    '#70300A',
+    '#20150E',
+    '#000000',
   ])
 
 const SVGBox: React.FC = () => (
@@ -44,7 +44,7 @@ const SVGWall: React.FC = () => (
   <Grid
     height="100px"
     width="100vw"
-    templateRows="repeat(4, 1fr)"
+    templateRows="repeat(2, 1fr)"
     templateColumns="repeat(auto-fill, 30px)"
   >
     {Array.from({ length: 4 }).map((_, __) =>

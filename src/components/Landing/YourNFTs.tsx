@@ -1,10 +1,10 @@
 import { Box, Flex, Text } from '@chakra-ui/react'
 
 const YourNFTs: React.FC = () => (
-  <Box backgroundColor="charcoal" color="white" pb="40px">
+  <Box backgroundColor="black" color="white" pb="40px">
     <Box maxW="1200px" mx="auto">
       <Flex pt="100px" textTransform="uppercase" fontSize="4xl">
-        <Text as="span">Your NFTs</Text>
+        <Text as="span">View your NFTs through Metis.Market!</Text>
       </Flex>
     </Box>
   </Box>

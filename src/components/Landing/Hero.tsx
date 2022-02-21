@@ -1,19 +1,12 @@
 import { Box, Flex, Text, Image, Button } from '@chakra-ui/react'
-import { useHistory } from 'react-router-dom'
 
 import ThemedButton from '../../themed/Button'
 import { useWallet } from '../../hooks'
 
 const Hero: React.FC = () => {
   const { currentAccount, connectWallet } = useWallet()
-  const history = useHistory()
-
-  const goToWhitepaper = () => {
-    history.push('/whitepaper')
-  }
-
   return (
-    <Box h="700px" w="100%" backgroundColor="targetBlue" color="white">
+    <Box h="700px" w="100%" backgroundColor="#803103" color="white">
       <Box maxW="1200px" mx="auto">
         <Flex
           w="100%"
@@ -21,8 +14,8 @@ const Hero: React.FC = () => {
           alignItems="center"
           py="20px"
         >
-          <Text as="span" fontSize="3xl">
-            GREEK GODS &amp; MORTALS
+          <Text as="span" fontSize="6xl">
+            GOD GAME
           </Text>
           {currentAccount ? (
             <Flex justifyContent="space-between" alignItems="center">
@@ -37,20 +30,18 @@ const Hero: React.FC = () => {
               </Text>
             </Flex>
           ) : (
-            <ThemedButton size="md" onClick={goToWhitepaper}>
-              Whitepaper
-            </ThemedButton>
+            <ThemedButton size="md">Whitepaper</ThemedButton>
           )}
         </Flex>
         <Flex w="100%" h="575px" justifyContent="center" alignItems="center">
           <Box mr="150px">
             <Box>
               <Text as="h4" fontSize="5xl" lineHeight={1}>
-                Become a Greek God.
+                Become a God.
               </Text>
               <Flex maxW="max-content">
                 <Text as="h4" fontSize="5xl" lineHeight={1}>
-                  Rule the World.
+                  Rule the Ancient World.
                 </Text>
                 <Image src="/assets/png/kind.png" alt="sword" ml="8px" />
               </Flex>
@@ -71,29 +62,19 @@ const Hero: React.FC = () => {
                 textTransform="uppercase"
                 fontWeight="400"
                 _hover={{
-                  backgroundColor: 'blue.300',
+                  backgroundColor: 'black',
                 }}
                 _active={{
-                  backgroundColor: 'blue.400',
+                  backgroundColor: 'red.900',
                 }}
                 {...(currentAccount && {
                   border: '1px solid white',
                 })}
-                onClick={goToWhitepaper}
               >
                 Read the whitepaper
               </Button>
             </Flex>
           </Box>
-          <Flex
-            backgroundColor="#75b4d4"
-            w="500px"
-            h="440px"
-            borderRadius="10px"
-            border="1px solid rgba(255, 255, 255, 0.26)"
-          >
-            <Image src="assets/png/armour_1.png" alt="god game" m="auto" />
-          </Flex>
         </Flex>
       </Box>
     </Box>

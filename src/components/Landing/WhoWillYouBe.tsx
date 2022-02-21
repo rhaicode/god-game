@@ -8,7 +8,7 @@ const StyledBox = styled(Box)`
 `
 
 const WhoWillYouBe: React.FC = () => (
-  <Box backgroundColor="charcoal" color="white">
+  <Box backgroundColor="black" color="white">
     <Box maxW="1200px" mx="auto">
       <Flex height="124px" />
       <Flex alignItems="center" justifyContent="center" mb="60px">

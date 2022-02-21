@@ -33,7 +33,7 @@ const Whitepaper: React.FC = () => {
 
   return (
     <>
-      <Box w="100%" backgroundColor="charcoal" color="white" pb="200px">
+      <Box w="100%" backgroundColor="black" color="white" pb="200px">
         <Flex
           w="100%"
           justifyContent="space-between"
@@ -44,7 +44,7 @@ const Whitepaper: React.FC = () => {
           mb="70px"
         >
           <Text as="span" fontSize="3xl">
-            GREEK GODS &amp; MORTALS
+            GOD GAME
           </Text>
           {currentAccount && (
             <Flex justifyContent="space-between" alignItems="center">
@@ -77,7 +77,7 @@ const Whitepaper: React.FC = () => {
             {'< Back'}
           </Button>
           <Text as="span" fontSize="5xl">
-            GREEK GODS &amp; MORTALS
+            GOD GAME
           </Text>
         </Flex>
         <Box ml="260px">
@@ -218,22 +218,22 @@ const Whitepaper: React.FC = () => {
             </Thead>
             <Tbody>
               <Tr>
-                <Td>1 to 1,000</Td>
+                <Td>1 to 10,000</Td>
                 <Td>(Gen 0)</Td>
                 <Td>.5 METIS</Td>
               </Tr>
               <Tr>
-                <Td>1,001 to 2,000</Td>
+                <Td>10,001 to 20,000</Td>
                 <Td />
                 <Td>20,000 $FAITH</Td>
               </Tr>
               <Tr>
-                <Td>2,001 to 4,000</Td>
+                <Td>20,001 to 40,000</Td>
                 <Td />
                 <Td>40,000 $FAITH</Td>
               </Tr>
               <Tr>
-                <Td>4,001 to 5,000</Td>
+                <Td>40,001 to 50,000</Td>
                 <Td />
                 <Td>80,000 $FAITH</Td>
               </Tr>
