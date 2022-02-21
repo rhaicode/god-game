@@ -2,9 +2,16 @@ import { Box, Flex, Text, Image, Button } from '@chakra-ui/react'
 
 import ThemedButton from '../../themed/Button'
 import { useWallet } from '../../hooks'
+import { useHistory } from 'react-router-dom'
 
 const Hero: React.FC = () => {
-  const { currentAccount, connectWallet } = useWallet()
+  const { currentAccount, connectWallet, loading } = useWallet()
+  const history = useHistory()
+
+  const goToWhitepaper = () => {
+    history.push('/whitepaper')
+  }
+
   return (
     <Box h="700px" w="100%" backgroundColor="#803103" color="white">
       <Box maxW="1200px" mx="auto">
@@ -52,7 +59,13 @@ const Hero: React.FC = () => {
             </Text>
             <Flex>
               {!currentAccount && (
-                <ThemedButton size="lg" mr="8px" onClick={connectWallet}>
+                <ThemedButton
+                  size="lg"
+                  mr="8px"
+                  onClick={connectWallet}
+                  isLoading={loading}
+                  isDisabled={loading}
+                >
                   Connect Metamask
                 </ThemedButton>
               )}

@@ -62,12 +62,8 @@ const Minting: React.FC = () => {
       </Flex>
       <Box>
         <Flex className="plex">
-          <Text as="span" fontSize="lg" color="gold" mr="8px">
-            0/2000 GEN
-          </Text>
-          <Text as="span" fontSize="lg">
-            0 MINTED
-          </Text>
+          <Text as="span" fontSize="lg" color="gold" mr="8px" />
+          <Text as="span" fontSize="lg" />
         </Flex>
       </Box>
       <Flex
