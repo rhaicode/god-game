@@ -221,22 +221,22 @@ const Whitepaper: React.FC = () => {
             </Thead>
             <Tbody>
               <Tr>
-                <Td>1 to 10,000</Td>
+                <Td>1 to 2,000</Td>
                 <Td>(Gen 0)</Td>
                 <Td>.5 METIS</Td>
               </Tr>
               <Tr>
-                <Td>10,001 to 20,000</Td>
+                <Td>2,001 to 4,000</Td>
                 <Td />
                 <Td>20,000 $FAITH</Td>
               </Tr>
               <Tr>
-                <Td>20,001 to 40,000</Td>
+                <Td>4,001 to 8,000</Td>
                 <Td />
                 <Td>40,000 $FAITH</Td>
               </Tr>
               <Tr>
-                <Td>40,001 to 50,000</Td>
+                <Td>8,001 to 10,000</Td>
                 <Td />
                 <Td>80,000 $FAITH</Td>
               </Tr>
