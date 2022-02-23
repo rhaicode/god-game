@@ -13,7 +13,7 @@ const Hero: React.FC = () => {
   }
 
   return (
-    <Box h="700px" w="100%" backgroundColor="#803103" color="white">
+    <Box h="700px" w="100%" backgroundColor="blue" color="white">
       <Box maxW="1200px" mx="auto">
         <Flex
           w="100%"

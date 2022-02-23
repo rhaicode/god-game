@@ -2,7 +2,7 @@ import { Flex, Text } from '@chakra-ui/react'
 import { Link } from 'react-router-dom'
 
 const Footer: React.FC = () => (
-  <Flex backgroundColor="#803103" color="white" height="250px">
+  <Flex backgroundColor="blue" color="white" height="250px">
     <Flex
       justifyContent="space-between"
       alignItems="center"
